@@ -1,0 +1,318 @@
+2021-12-03 15:57:09,063 - Model - INFO - PARAMETER ...
+2021-12-03 15:57:09,063 - Model - INFO - Namespace(batch_size=16, dataset_path='/data/PointCloud/S3DIS/stanford_indoor3d/', decay_rate=0.0001, epoch=32, gpu='0', learning_rate=0.001, log_dir='pointnet2_denseD_sem_b_16', lr_decay=0.7, model='pointnet2_denseD_sem_seg', num_in_net_point=4096, optimizer='Adam', step_size=10, test_area=5)
+2021-12-03 15:57:58,014 - Model - INFO - The number of training data is: 47623
+2021-12-03 15:57:58,015 - Model - INFO - The number of test data is: 18923
+2021-12-03 15:57:59,177 - Model - INFO - Use pretrain model
+2021-12-03 15:57:59,178 - Model - INFO - **** Epoch 1 (7/32) ****
+2021-12-03 15:57:59,178 - Model - INFO - Learning rate:0.001000
+2021-12-03 15:58:14,932 - Model - INFO - Train_step: 0000 Mean_loss: : 0.000 Acc: 0.87  Time_interval:    15.75 s
+2021-12-03 15:58:14,935 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.99 
+class floor          acc: 0.99 
+class wall           acc: 0.88 
+class beam           acc: 0.94 
+class column         acc: 0.22 
+class window         acc: 0.00 
+class door           acc: 0.89 
+class table          acc: 0.98 
+class chair          acc: 0.86 
+class sofa           acc: 0.00 
+class bookcase       acc: 0.60 
+class board          acc: 0.00 
+class clutter        acc: 0.69 
+
+2021-12-03 16:53:01,219 - Model - INFO - Train_step: 0500 Mean_loss: : 0.064 Acc: 0.88  Time_interval:  3302.04 s
+2021-12-03 16:53:01,222 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.99 
+class floor          acc: 0.98 
+class wall           acc: 0.91 
+class beam           acc: 0.94 
+class column         acc: 0.29 
+class window         acc: 0.87 
+class door           acc: 0.88 
+class table          acc: 0.98 
+class chair          acc: 0.90 
+class sofa           acc: 0.52 
+class bookcase       acc: 0.78 
+class board          acc: 0.00 
+class clutter        acc: 0.72 
+
+2021-12-03 17:47:31,799 - Model - INFO - Train_step: 1000 Mean_loss: : 0.126 Acc: 0.88  Time_interval:  6572.62 s
+2021-12-03 17:47:31,802 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.99 
+class floor          acc: 0.99 
+class wall           acc: 0.84 
+class beam           acc: 0.95 
+class column         acc: 0.29 
+class window         acc: 0.87 
+class door           acc: 0.88 
+class table          acc: 0.84 
+class chair          acc: 0.87 
+class sofa           acc: 0.52 
+class bookcase       acc: 0.82 
+class board          acc: 0.00 
+class clutter        acc: 0.71 
+
+2021-12-03 18:41:58,211 - Model - INFO - Train_step: 1500 Mean_loss: : 0.190 Acc: 0.88  Time_interval:  9839.03 s
+2021-12-03 18:41:58,214 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.84 
+class beam           acc: 0.95 
+class column         acc: 0.35 
+class window         acc: 0.91 
+class door           acc: 0.86 
+class table          acc: 0.85 
+class chair          acc: 0.88 
+class sofa           acc: 0.52 
+class bookcase       acc: 0.81 
+class board          acc: 0.98 
+class clutter        acc: 0.71 
+
+2021-12-03 19:38:22,287 - Model - INFO - Train_step: 2000 Mean_loss: : 0.252 Acc: 0.88  Time_interval: 13223.11 s
+2021-12-03 19:38:22,290 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.81 
+class beam           acc: 0.95 
+class column         acc: 0.34 
+class window         acc: 0.91 
+class door           acc: 0.89 
+class table          acc: 0.86 
+class chair          acc: 0.88 
+class sofa           acc: 0.85 
+class bookcase       acc: 0.79 
+class board          acc: 0.67 
+class clutter        acc: 0.71 
+
+2021-12-03 20:30:12,419 - Model - INFO - Train_step: 2500 Mean_loss: : 0.313 Acc: 0.88  Time_interval: 16333.24 s
+2021-12-03 20:30:12,422 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.80 
+class beam           acc: 0.96 
+class column         acc: 0.33 
+class window         acc: 0.94 
+class door           acc: 0.89 
+class table          acc: 0.87 
+class chair          acc: 0.91 
+class sofa           acc: 0.91 
+class bookcase       acc: 0.72 
+class board          acc: 0.67 
+class clutter        acc: 0.72 
+
+2021-12-03 21:23:31,801 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2021-12-03 23:31:34,637 - Model - INFO - eval mean loss: 0.784612
+2021-12-03 23:31:34,637 - Model - INFO - eval point avg class IoU: 0.499196
+2021-12-03 23:31:34,637 - Model - INFO - eval point accuracy: 0.811149
+2021-12-03 23:31:34,638 - Model - INFO - eval point avg class acc: 0.613051
+2021-12-03 23:31:34,638 - Model - INFO - ------- IoU --------
+class ceiling        weight: 0.092, IoU: 0.894 
+class floor          weight: 0.202, IoU: 0.965 
+class wall           weight: 0.168, IoU: 0.727 
+class beam           weight: 0.275, IoU: 0.000 
+class column         weight: 0.000, IoU: 0.101 
+class window         weight: 0.018, IoU: 0.526 
+class door           weight: 0.033, IoU: 0.219 
+class table          weight: 0.029, IoU: 0.668 
+class chair          weight: 0.040, IoU: 0.709 
+class sofa           weight: 0.019, IoU: 0.287 
+class bookcase       weight: 0.002, IoU: 0.533 
+class board          weight: 0.109, IoU: 0.471 
+class clutter        weight: 0.012, IoU: 0.389 
+
+2021-12-03 23:31:34,639 - Model - INFO - Eval mean loss: 0.784612
+2021-12-03 23:31:34,639 - Model - INFO - Eval accuracy: 0.811149
+2021-12-03 23:31:34,639 - Model - INFO - Epoch: 001 Time_interval: 27215.46 s
+2021-12-03 23:31:34,639 - Model - INFO - Save model...
+2021-12-03 23:31:34,639 - Model - INFO - Saving at /home/wyx/projects/3d_point_cloud/Pointnet2_denseDecode_torch/my_log/sem_seg/pointnet2_denseD_sem_b_16/checkpoints/best_model.pth
+2021-12-03 23:31:34,679 - Model - INFO - Saving model....
+2021-12-03 23:31:34,679 - Model - INFO - Best mIoU: 0.499196
+2021-12-03 23:31:34,679 - Model - INFO - **** Epoch 2 (8/32) ****
+2021-12-03 23:31:34,679 - Model - INFO - Learning rate:0.001000
+2021-12-03 23:31:43,491 - Model - INFO - Train_step: 0000 Mean_loss: : 0.000 Acc: 0.91  Time_interval:     8.81 s
+2021-12-03 23:31:43,495 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.78 
+class beam           acc: 0.95 
+class column         acc: 0.91 
+class window         acc: 0.81 
+class door           acc: 0.85 
+class table          acc: 0.90 
+class chair          acc: 0.82 
+class sofa           acc: 0.97 
+class bookcase       acc: 0.97 
+class board          acc: 0.00 
+class clutter        acc: 0.90 
+
+2021-12-04 00:31:37,904 - Model - INFO - Train_step: 0500 Mean_loss: : 0.060 Acc: 0.88  Time_interval:  3603.22 s
+2021-12-04 00:31:37,907 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.77 
+class beam           acc: 0.96 
+class column         acc: 0.61 
+class window         acc: 0.94 
+class door           acc: 0.95 
+class table          acc: 0.86 
+class chair          acc: 0.83 
+class sofa           acc: 0.92 
+class bookcase       acc: 0.86 
+class board          acc: 0.00 
+class clutter        acc: 0.76 
+
+2021-12-04 01:25:36,876 - Model - INFO - Train_step: 1000 Mean_loss: : 0.122 Acc: 0.88  Time_interval:  6842.20 s
+2021-12-04 01:25:36,879 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.81 
+class beam           acc: 0.96 
+class column         acc: 0.61 
+class window         acc: 0.96 
+class door           acc: 0.93 
+class table          acc: 0.87 
+class chair          acc: 0.82 
+class sofa           acc: 0.92 
+class bookcase       acc: 0.80 
+class board          acc: 0.00 
+class clutter        acc: 0.73 
+
+2021-12-04 02:17:45,793 - Model - INFO - Train_step: 1500 Mean_loss: : 0.182 Acc: 0.88  Time_interval:  9971.11 s
+2021-12-04 02:17:45,796 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.82 
+class beam           acc: 0.97 
+class column         acc: 0.57 
+class window         acc: 0.93 
+class door           acc: 0.93 
+class table          acc: 0.88 
+class chair          acc: 0.85 
+class sofa           acc: 0.92 
+class bookcase       acc: 0.85 
+class board          acc: 0.81 
+class clutter        acc: 0.75 
+
+2021-12-04 03:10:56,909 - Model - INFO - Train_step: 2000 Mean_loss: : 0.243 Acc: 0.88  Time_interval: 13162.23 s
+2021-12-04 03:10:56,912 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.84 
+class beam           acc: 0.95 
+class column         acc: 0.65 
+class window         acc: 0.94 
+class door           acc: 0.93 
+class table          acc: 0.89 
+class chair          acc: 0.86 
+class sofa           acc: 0.92 
+class bookcase       acc: 0.85 
+class board          acc: 0.88 
+class clutter        acc: 0.76 
+
+2021-12-04 04:05:09,621 - Model - INFO - Train_step: 2500 Mean_loss: : 0.302 Acc: 0.88  Time_interval: 16414.94 s
+2021-12-04 04:05:09,624 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.98 
+class floor          acc: 0.99 
+class wall           acc: 0.85 
+class beam           acc: 0.95 
+class column         acc: 0.65 
+class window         acc: 0.94 
+class door           acc: 0.93 
+class table          acc: 0.89 
+class chair          acc: 0.86 
+class sofa           acc: 0.92 
+class bookcase       acc: 0.84 
+class board          acc: 0.92 
+class clutter        acc: 0.76 
+
+2021-12-04 04:57:37,994 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2021-12-04 06:58:45,901 - Model - INFO - eval mean loss: 0.872601
+2021-12-04 06:58:45,901 - Model - INFO - eval point avg class IoU: 0.498199
+2021-12-04 06:58:45,901 - Model - INFO - eval point accuracy: 0.804390
+2021-12-04 06:58:45,901 - Model - INFO - eval point avg class acc: 0.593489
+2021-12-04 06:58:45,901 - Model - INFO - ------- IoU --------
+class ceiling        weight: 0.090, IoU: 0.900 
+class floor          weight: 0.199, IoU: 0.973 
+class wall           weight: 0.166, IoU: 0.710 
+class beam           weight: 0.280, IoU: 0.000 
+class column         weight: 0.000, IoU: 0.064 
+class window         weight: 0.019, IoU: 0.565 
+class door           weight: 0.035, IoU: 0.181 
+class table          weight: 0.031, IoU: 0.663 
+class chair          weight: 0.039, IoU: 0.707 
+class sofa           weight: 0.019, IoU: 0.304 
+class bookcase       weight: 0.002, IoU: 0.530 
+class board          weight: 0.108, IoU: 0.504 
+class clutter        weight: 0.011, IoU: 0.376 
+
+2021-12-04 06:58:45,903 - Model - INFO - Eval mean loss: 0.872601
+2021-12-04 06:58:45,903 - Model - INFO - Eval accuracy: 0.804390
+2021-12-04 06:58:45,903 - Model - INFO - Epoch: 002 Time_interval: 54046.73 s
+2021-12-04 06:58:45,903 - Model - INFO - Best mIoU: 0.499196
+2021-12-04 06:58:45,903 - Model - INFO - **** Epoch 3 (9/32) ****
+2021-12-04 06:58:45,903 - Model - INFO - Learning rate:0.001000
+2021-12-04 06:58:53,742 - Model - INFO - Train_step: 0000 Mean_loss: : 0.000 Acc: 0.89  Time_interval:     7.84 s
+2021-12-04 06:58:53,749 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.97 
+class floor          acc: 1.00 
+class wall           acc: 0.90 
+class beam           acc: 0.91 
+class column         acc: 0.57 
+class window         acc: 1.00 
+class door           acc: 0.84 
+class table          acc: 0.96 
+class chair          acc: 0.61 
+class sofa           acc: 0.00 
+class bookcase       acc: 0.93 
+class board          acc: 0.00 
+class clutter        acc: 0.76 
+
+2021-12-04 07:50:05,034 - Model - INFO - Train_step: 0500 Mean_loss: : 0.059 Acc: 0.89  Time_interval:  3079.13 s
+2021-12-04 07:50:05,037 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.97 
+class floor          acc: 0.99 
+class wall           acc: 0.79 
+class beam           acc: 0.95 
+class column         acc: 0.57 
+class window         acc: 1.00 
+class door           acc: 0.84 
+class table          acc: 0.91 
+class chair          acc: 0.57 
+class sofa           acc: 0.99 
+class bookcase       acc: 0.79 
+class board          acc: 0.00 
+class clutter        acc: 0.72 
+
+2021-12-04 08:44:59,730 - Model - INFO - Train_step: 1000 Mean_loss: : 0.117 Acc: 0.89  Time_interval:  6373.83 s
+2021-12-04 08:44:59,733 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.97 
+class floor          acc: 0.99 
+class wall           acc: 0.84 
+class beam           acc: 0.96 
+class column         acc: 0.57 
+class window         acc: 0.94 
+class door           acc: 0.75 
+class table          acc: 0.88 
+class chair          acc: 0.67 
+class sofa           acc: 0.99 
+class bookcase       acc: 0.78 
+class board          acc: 0.00 
+class clutter        acc: 0.74 
+
+2021-12-04 09:39:24,015 - Model - INFO - Train_step: 1500 Mean_loss: : 0.176 Acc: 0.89  Time_interval:  9638.11 s
+2021-12-04 09:39:24,018 - Model - INFO - ------- Acc --------
+class ceiling        acc: 0.97 
+class floor          acc: 0.99 
+class wall           acc: 0.85 
+class beam           acc: 0.97 
+class column         acc: 0.69 
+class window         acc: 0.94 
+class door           acc: 0.76 
+class table          acc: 0.86 
+class chair          acc: 0.69 
+class sofa           acc: 0.99 
+class bookcase       acc: 0.82 
+class board          acc: 0.74 
+class clutter        acc: 0.74 
+
